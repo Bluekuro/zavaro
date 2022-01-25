@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgb(243, 220, 243);
+    --contraste: rgb(242, 176, 93);
+    --colorletras: rgb(79, 58, 111);
+    --fondo: rgb(255, 251, 214);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Shadows Into Light', cursive;
+}
+body{/* 7 */
+    display: grid;
+    grid-template-columns: 175px 1000px 175px;
+    grid-template-rows: 230px 70px 800px 100px;   
+}
+#izq{/* 1 */
+    overflow: hidden;
+    grid-row-start: span 4;
+    background-color: white;
+}
+#imgizq{
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+}
+header{/* 2 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorsecundario);
+}
+#logozavaro{
+    width: 255px;
+}
+#divh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 120px;
+    margin-top: 30px;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+#der{/* 3 */
+    overflow: hidden;
+    position: relative;
+    grid-row-start: span 4;
+}
+#imgder{
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    transform: translateX(-25%)
+}
+nav{/* 4 */
+    background-color: rgb(243, 220, 243);
+    font-size: 20px;
+}
+#ulnav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+main{/* 5 */
+    /* grid-column-start: 1; */
+    background-color: silver;
+}
+footer{/* 6 */
+    /* grid-column-start: 1; */
+    background-color: slateblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgfooter{
+    width: 45px;
+    border-radius: 5px;
+    margin: 4px 10px 4px;
+}
+.imgfooter:hover{
+    transform: scale(1.3, 1.3);
+}

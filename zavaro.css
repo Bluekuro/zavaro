@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+:root{
+    --colorprimario: white;
+    --colorsecundario: rgb(243, 220, 243);
+    --contraste: rgb(242, 176, 93);
+    --colorletras: rgb(79, 58, 111);
+    --fondo: rgb(255, 251, 214);
+    --shadow: rgb(255, 170, 149);
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--colorletras);
+}
+a{
+    text-decoration: none;
+}
+li{
+    transition: 0.8s all;
+    font-weight: bold;
+}
+li:hover{
+    transform: scale(1.3, 1.3);
+    transition: 0.2s all;
+    border-radius: 5px;
+    background-color: rgb(250,0,0,0.1);
+}
+body{/* 7 */
+    display: grid;
+    grid-template-columns: 125px 1100px 125px;
+    grid-template-rows: 230px 70px 800px 100px;
+}
+#izq{/* 1 */
+    overflow: hidden;
+    grid-row-start: span 4;
+    background-color: white;
+}
+#imgizq{
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+}
+header{/* 2 */
+/*     display: flex;
+    justify-content: space-around;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-image: radial-gradient(at right bottom, var(--colorsecundario), var(--fondo));
+    border-bottom: 5px dashed var(--colorletras);
+    text-shadow: 1px 1px 45px var(--shadow);
+}
+#divlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logozavaro{
+    width: 255px;
+}
+hgroup{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+#zavaro{
+    text-align: center;
+    font-size: 170px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    line-height: 150px;
+}
+#disenos{
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 15px var(--shadow);
+}
+#der{/* 3 */
+    overflow: hidden;
+    position: relative;
+    grid-row-start: span 4;
+}
+#imgder{
+    object-fit: cover;
+    position: relative;
+    height: 100%;
+    transform: translateX(-25%)
+}
+nav{/* 4 */
+    border-bottom: 1.5px dashed var(--colorletras);
+    background-color: var(--fondo);
+    font-size: 23px;
+}
+#ulnav{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-shadow: 1px 1px 15px var(--shadow);
+}
+main{/* 5 */
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+    background-color: var(--colorprimario);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.fondoficha{
+    width: 300px;
+    height: 540px;
+    display: grid;
+    grid-template-rows: 1fr 50% 1fr;
+    background-color: var(--fondo);
+    border-radius: 10px;
+    border: 1px dashed var(--colorletras);
+    box-shadow: 5px 5px 1px var(--colorsecundario);
+}
+.margenficha{
+    grid-row-start: span 2;
+    margin: 4px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.tituloficha{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 1px 10px var(--shadow);
+}
+.tituloficha:hover{
+    transform: scale(1.3, 1.3);
+    border-radius: 5px;
+}
+.imgficha{
+    width: 90%;
+    border-radius: 5px;
+    margin: 8px;
+    border: 1px dashed var(--colorletras);
+    box-shadow: 5px 5px 1px var(--colorsecundario);
+}
+.datosficha{
+    font-weight: bold;
+    width: 90%;
+    margin: 3px 8px 8px;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: rgb(250,0,0,0.1);
+    border: 1px dashed var(--colorletras);
+}
+.botonficha{
+    width: 60%;
+    text-align: center;
+    margin-left: 19%;
+    background-color: var(--colorprimario);
+    border-radius: 5px;
+    border-color: 0.5px, var(--colorletras);
+}
+footer{/* 6 */
+    /* grid-column-start: 1; */
+    border-top: 1.5px dashed var(--colorletras);
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgfooter{
+    width: 50px;
+    border-radius: 5px;
+    margin: 4px 10px 4px;
+    box-shadow: 5px 5px 1px var(--colorletras);
+    
+}
+.imgfooter:hover{
+    transform: scale(1.3, 1.3);
+    box-shadow: 5px 5px 1px var(--colorsecundario);
+}
